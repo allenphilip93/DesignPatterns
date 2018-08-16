@@ -1,10 +1,10 @@
 public class CharacterConverter extends Converter {
 
-    private String output;
+    private String output = "";
 
     public void convertCharacter(Object obj) {
         System.out.println("Building the character from object");
-        output = (String) obj;
+        output = output + (String) obj;
     }
 
     public String getCharacter() {
